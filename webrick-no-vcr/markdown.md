@@ -199,10 +199,12 @@ end
 
 ## VCR feature: Detecting unrecognized network requests
 
-Block network access with a firewall when not recording new requests. Block network access on CI by default.
+Block network access with a firewall when not recording new requests.
+
+Block network access on CI by default.
 
 
 
 ## Thank you
 
-Time for questions and critique.
+Questions and critique are welcome.
