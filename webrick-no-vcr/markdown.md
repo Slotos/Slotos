@@ -164,7 +164,7 @@ test_responder = Class.new do
 end
 
 responder = test_responder.new('{"key": "value", "success": true}')
-TestWebserver.instance.mount_echo(responder.callable) do |url|
+TestWebserver.instance.mount(responder.callable) do |url|
   assert_eq(Client.new(url:).fetch_value, "value")
   assert_eq(responder.req["Accept"], "application/json")
 end
